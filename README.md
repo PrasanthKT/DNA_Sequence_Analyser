@@ -1,11 +1,11 @@
 ## Protospacer_Finder
 
 
-The CRISPR-Cas system represents one of the most significant breakthroughs in gene and genome editing over the past few decades. This system is guided by guide RNAs (gRNAs), which search for specific sequences known as Protospacer Adjacent Motifs (PAMs). These sequences enable gRNAs to locate and edit targets at precise locations within the genome. Each CRISPR-Cas system has its own unique PAM sequence to identify and edit target positions. For example, PAMs can be present either on the 3' end for Cas9 (NGG) or the 5' end for Cas12a (TTTV).
+The CRISPR-Cas system is a groundbreaking advancement in gene and genome editing, guided by guide RNAs (gRNAs) that search for specific sequences known as Protospacer Adjacent Motif (PAM). These sequences enable gRNAs to locate and edit targets precisley within the genome. Each CRISPR-Cas system has its own unique PAM sequence to identify and edit target positions. For instance, PAMs can be present either on the 3' end for Cas9 (NGG) or the 5' end for Cas12a (TTTV).
 
-This project introduces a tool developed using Python that identifies protospacers for various CRISPR-Cas systems, essentially serving as a universal protospacer finder for all Cas Nucleases which have different PAMs. The primary objective of a CRISPR-Cas system is to accurately edit specific targets while minimizing off-target effects, which are critical in gene/genome editing. This tool can be used to locate protospacers for specific PAM sequences, at desired locations, and with defined protospacer lengths. Additionally, it can identify off-targets present in the genome, enhancing the precision of CRISPR-Cas gene editing.
+This project introduces a tool developed using Python that identifies protospacers for various CRISPR-Cas systems, essentially serving as a universal Protospacer finder for all Cas Nucleases which have different PAMs. The primary objective of a CRISPR-Cas system is to accurately edit specific targets while minimizing off-target effects, which are critical in gene/genome editing. This tool can be used to locate protospacers for specific PAM sequences, at desired locations, and with defined protospacer lengths. Additionally, it can identify off-targets present in the genome, enhancing the precision of CRISPR-Cas gene editing.
 
-The results from this tool can be used to design gRNAs (although this tool does not have features to rank gRNAs or predict their efficiency), it provides the number of off-targets present in the genome for each protospacer Sequence. These results can also be used to determine whether target regions are locate in intronic or exonic regions if you have the GTF/GFF format file of the genome.
+The results from this tool can be used to design gRNAs. Although this tool does not have features to rank gRNAs or predict their efficiency, it provides the number of off-targets present in the genome for each protospacer Sequence. These results can also be used to determine whether target regions are locate in intronic or exonic regions if you have the GTF/GFF format file of the genome.
 
 
 ## Packages/ Dependencies
@@ -24,13 +24,15 @@ Run: [Make sure you activate your conda environment that contains all the requir
 python main.py 'fasta_file' 'pam_sequence' 'pam_location' 'protospacer_length' 'reference_genome' 'output_file'
 
 ```
+Arguments:
+```
 1. fasta_file - Targer Gene Fasta file
 2. pam_sequence - PAM Sequence of the Nuclease.
 3. pam_location - Location of the PAM (either 3' or 5')
 4. protospacer_length - Length of the Protospacer (ex: 20bp for Cas9 24bp for Cas12a)
 5. reference_genome - Reference genome of the organism to find the off targets for each protospacer
 6. output_file - Name of the Output file for the script to write.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
 ## Example Run:
 Run the intial script with very small gene and genome of Prochlorococcus. 
 
