@@ -10,6 +10,8 @@ The results from this tool can be used to design gRNAs. Although this tool does 
 ## Installation/Usage: 
 Cloning the repository, use the following command:
 ```
+git clone https://github.com/PrasanthKT/Protospacer_Finder.git
+cd Protospacer_Finder
 ```
 ## Dependencies
 Ensure you have the following dependencies installed:
