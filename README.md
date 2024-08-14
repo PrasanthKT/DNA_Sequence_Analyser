@@ -7,6 +7,10 @@ This project introduces a tool developed using Python that identifies protospace
 
 The results from this tool can be used to design gRNAs. Although this tool does not have features to rank gRNAs or predict their efficiency, it provides the number of off-targets present in the genome for each protospacer Sequence. These results can also be used to determine whether target regions are locate in intronic or exonic regions if you have the GTF/GFF format file of the genome.
 
+## Picture for the Project: 
+
+## Installation/Usage: 
+Tell them How to clone this repository an how to run the tool.
 
 ## Packages/ Dependencies
 1. Conda 24.7.1
@@ -14,10 +18,9 @@ The results from this tool can be used to design gRNAs. Although this tool does 
 3. Biopython 1.84
 4. BWA 0.7.18
 
+## Environment:
 
-## Usage
-1. Clone the Repository/ Download all the .py files
-2. Run the main.py file
+
 
 Run: [Make sure you activate your conda environment that contains all the required pacakages/ dependencies]
 ```
@@ -49,20 +52,17 @@ CTTACAGGATTCTTAGGTTC    AGG        CTTACAGGATTCTTAGGTTCAGG 	1
 AGAATTTTAAGCGAAGAACA    TGG        AGAATTTTAAGCGAAGAACATGG 	1
 GCCGTTATTGAGAACGAATA    TGG        GCCGTTATTGAGAACGAATATGG 	1
 GAGAACGAATATGGAGAAGT    TGG        GAGAACGAATATGGAGAAGTTGG 	1
-GGAGAAGTTGGAATTGACCA    AGG        GGAGAAGTTGGAATTGACCAAGG 	1
-AGTTGGAATTGACCAAGGAT    TGG        AGTTGGAATTGACCAAGGATTGG 	1
-GAAGTATTTGAAATGTCTAA    TGG        GAAGTATTTGAAATGTCTAATGG 	1
-TGCATTTGTTGTACTGTTCG    AGG        TGCATTTGTTGTACTGTTCGAGG 	1
-GGAGATCTTATTAGAGTCCT    TGG        GGAGATCTTATTAGAGTCCTTGG 	1
-TTGGTAATTTGATGAAAAGA    AGG        TTGGTAATTTGATGAAAAGAAGG 	1
-TGGTAATTTGATGAAAAGAA    GGG        TGGTAATTTGATGAAAAGAAGGG 	1
-TATGTTTTAGTTGAAACCAC    TGG        TATGTTTTAGTTGAAACCACTGG 	1
-ACCACTGGATTAGCAGACCC    AGG        ACCACTGGATTAGCAGACCCAGG 	1
-CGTTGCTCAAACATTTTTTA    TGG        CGTTGCTCAAACATTTTTTATGG 	1
-AGTTCTGAATTTATACTTGA    TGG        AGTTCTGAATTTATACTTGATGG 	1
-GCTCATATTGATCAACAACT    TGG        GCTCATATTGATCAACAACTTGG 	1
 ```
 ## Result 
-The output of the script consists of all the protospacers for the target gene the PAM sequence of the protospacer, the Matching Sequence in the Genome Off Target Count. [The  first version of the script gives the matching sequnence, we see the same sequence beacuse it identifies the same sequence in the genome and off target count is 1. So The next version of the code can be developed in such a way that we can input the number of mismatches we can allow for the off-targets and also to specify at which positions the mismatches are allowed and the future versions where it can identify whether the targets are presrnt in the intronic regions/ exonic regions if we can provide a the GTF/GFF file of the organism]. 
+The output of the script consists of all the protospacers for the target gene the PAM sequence of the protospacer, the Matching Sequence in the Genome Off Target Count. 
+
+## Next Versions will have these features [The  first version of the script gives the matching sequnence, we see the same sequence beacuse it identifies the same sequence in the genome and off target count is 1. So The next version of the code can be developed in such a way that we can input the number of mismatches we can allow for the off-targets and also to specify at which positions the mismatches are allowed and the future versions where it can identify whether the targets are presrnt in the intronic regions/ exonic regions if we can provide a the GTF/GFF file of the organism]. 
+
+## If someone want to devlop this Further can develop this.
+
+## Need Assitance/ Feedback Reach out to me at: 
+
+
+
 
 
