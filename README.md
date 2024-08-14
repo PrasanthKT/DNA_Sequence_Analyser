@@ -7,22 +7,25 @@ This project introduces a tool developed using Python that identifies protospace
 
 The results from this tool can be used to design gRNAs. Although this tool does not have features to rank gRNAs or predict their efficiency, it provides the number of off-targets present in the genome for each protospacer Sequence. These results can also be used to determine whether target regions are locate in intronic or exonic regions if you have the GTF/GFF format file of the genome.
 
-## Picture for the Project: 
-
 ## Installation/Usage: 
-Tell them How to clone this repository an how to run the tool.
-
-## Packages/ Dependencies
+Cloning the repository, use the following command:
+```
+```
+## Dependencies
+Ensure you have the following dependencies installed:
 1. Conda 24.7.1
 2. Python 3.12.2
 3. Biopython 1.84
 4. BWA 0.7.18
 
-## Environment:
+## Running the Tool 
+Activate your conda environment that contains all the required packages/dependencies:
 
+```
+conda activate your_environment_name
+```
+Run the tool using the following command:
 
-
-Run: [Make sure you activate your conda environment that contains all the required pacakages/ dependencies]
 ```
 python main.py 'fasta_file' 'pam_sequence' 'pam_location' 'protospacer_length' 'reference_genome' 'output_file'
 
@@ -37,32 +40,33 @@ Arguments:
 6. output_file - Name of the Output file for the script to write.
 ```
 ## Example Run:
-Run the intial script with very small gene and genome of Prochlorococcus. 
+Due to limited computational power of my local computer, I have used a very small gene and the reference genome of Prochlorococcus. Assumed that the target gene will be editied using CRISPR - Cas9, the arguments as follows:  PAM Sequence is NGG, PAM Location is 3prime and the protospacer length is 20bp. The output will be written to a file called Output.txt 
 
 ```
 python main.py gene.fasta NGG 3prime 20 ref_genome.fasta Output.txt
 ```
 
-## Output:
+## Output
+The output of the script consists of all the protospacers for the target gene, the PAM sequence of the protospacer, the matching sequence in the genome, and the off-target count.
 ```
   Protospacer         PAM Sequence    Matching Sequence       Off-Target Count
-GTTCCCGTTACAATCCTTAC    AGG        GTTCCCGTTACAATCCTTACAGG 	1
-ACAATCCTTACAGGATTCTT    AGG        ACAATCCTTACAGGATTCTTAGG 	1
-CTTACAGGATTCTTAGGTTC    AGG        CTTACAGGATTCTTAGGTTCAGG 	1
-AGAATTTTAAGCGAAGAACA    TGG        AGAATTTTAAGCGAAGAACATGG 	1
-GCCGTTATTGAGAACGAATA    TGG        GCCGTTATTGAGAACGAATATGG 	1
-GAGAACGAATATGGAGAAGT    TGG        GAGAACGAATATGGAGAAGTTGG 	1
+GTTCCCGTTACAATCCTTAC    AGG        GTTCCCGTTACAATCCTTACAGG 	      1
+ACAATCCTTACAGGATTCTT    AGG        ACAATCCTTACAGGATTCTTAGG 	      1
+CTTACAGGATTCTTAGGTTC    AGG        CTTACAGGATTCTTAGGTTCAGG 	      1
+AGAATTTTAAGCGAAGAACA    TGG        AGAATTTTAAGCGAAGAACATGG 	      1
+GCCGTTATTGAGAACGAATA    TGG        GCCGTTATTGAGAACGAATATGG 	      1
+GAGAACGAATATGGAGAAGT    TGG        GAGAACGAATATGGAGAAGTTGG 	      1
 ```
-## Result 
-The output of the script consists of all the protospacers for the target gene the PAM sequence of the protospacer, the Matching Sequence in the Genome Off Target Count. 
+## Future Versions
+The first version of this tool is still in development. Future versions could include:
 
-## Next Versions will have these features [The  first version of the script gives the matching sequnence, we see the same sequence beacuse it identifies the same sequence in the genome and off target count is 1. So The next version of the code can be developed in such a way that we can input the number of mismatches we can allow for the off-targets and also to specify at which positions the mismatches are allowed and the future versions where it can identify whether the targets are presrnt in the intronic regions/ exonic regions if we can provide a the GTF/GFF file of the organism]. 
+1. Allowing input for the number of mismatches for off-targets.
+2. Specifying positions where mismatches are allowed.
+3. Identifying whether targets are present in intronic or exonic regions if a GTF/GFF file of the organism is provided.
+4. A clear user interface can be developed in future versions, allowing users to simply upload their gene FASTA file and the reference genome file and the GTT/GTF file to find the protospacers and their regions.
 
-## If someone want to devlop this Further can develop this.
+## Open Tool
+This is open-source, and contributions are welcome.
 
-## Need Assitance/ Feedback Reach out to me at: 
-
-
-
-
-
+## Contact
+In case of any problems, bugs, or feedback, please contact: prasanthkumar.t.22@gmail.com
