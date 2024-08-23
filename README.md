@@ -66,6 +66,7 @@ The first version of this tool is still in development. Future versions could in
 2. Specifying positions where mismatches are allowed.
 3. Identifying whether targets are present in intronic or exonic regions if a GTF/GFF file of the organism is provided.
 4. A clear user interface can be developed in future versions, allowing users to simply upload their gene FASTA file and the reference genome file and the GTT/GTF file to find the protospacers and their regions.
+5. Unique protospacer_id can be assigned according to the user specification and the next ids can be followed accordingly. 
 
 ## Open Tool
 This is open-source, and contributions are welcome.
