@@ -1,11 +1,17 @@
 ## Protospacer_Finder
 
-![CRISPR_Img](https://github.com/user-attachments/assets/d9784be7-26b7-4b53-97d9-99780a7af249)
+
+<img width="361" alt="CRISPR" src="https://github.com/user-attachments/assets/3ff45b15-203f-4246-ad08-cc911884306b">
+
 
 
 The CRISPR-Cas system is a groundbreaking advancement in gene and genome editing, guided by guide RNAs (gRNAs) that search for specific sequences known as Protospacer Adjacent Motif (PAM). These sequences enable gRNAs to locate and edit targets precisley within the genome. Each CRISPR-Cas system has its own unique PAM sequence to identify and edit target positions. For instance, PAMs can be present either on the 3' end for Cas9 (NGG) or the 5' end for Cas12a (TTTV).
 
+<img width="604" alt="Protospacer" src="https://github.com/user-attachments/assets/6b4fe841-e859-49e3-ae88-b1f1351df074">
+
 This project introduces a tool developed using Python that identifies protospacers for various CRISPR-Cas systems, essentially serving as a universal Protospacer finder for all Cas Nucleases which have different PAMs. The primary objective of a CRISPR-Cas system is to accurately edit specific targets while minimizing off-target effects, which are critical in gene/genome editing. This tool can be used to locate protospacers for specific PAM sequences, at desired locations, and with defined protospacer lengths. Additionally, it can identify off-targets present in the genome, enhancing the precision of CRISPR-Cas gene editing.
+
+<img width="922" alt="Workflow" src="https://github.com/user-attachments/assets/436c5b81-f5c1-4f34-a631-e1c57082c0c5">
 
 The results from this tool can be used to design gRNAs. Although this tool does not have features to rank gRNAs or predict their efficiency, it provides the number of off-targets present in the genome for each protospacer Sequence. These results can also be used to determine whether target regions are locate in intronic or exonic regions if you have the GTF/GFF format file of the genome.
 
