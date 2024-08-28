@@ -1,7 +1,6 @@
 ## Protospacer_Finder
 
-
-![CRISPR](PrasanthKT/Protospcaer_Finder/CRISPR_Img.jpeg)
+![CRISPR_Img](https://github.com/user-attachments/assets/d9784be7-26b7-4b53-97d9-99780a7af249)
 
 
 The CRISPR-Cas system is a groundbreaking advancement in gene and genome editing, guided by guide RNAs (gRNAs) that search for specific sequences known as Protospacer Adjacent Motif (PAM). These sequences enable gRNAs to locate and edit targets precisley within the genome. Each CRISPR-Cas system has its own unique PAM sequence to identify and edit target positions. For instance, PAMs can be present either on the 3' end for Cas9 (NGG) or the 5' end for Cas12a (TTTV).
