@@ -2,29 +2,30 @@
 
 Protospacer_Finder is a Python-based tool designed to identify protospacers for various CRISPR-Cas systems. It serves as a universal protospacer finder for all Cas nucleases with different PAM (Protospacer Adjacent Motif) sequences.
 
-# Overview
+### Overview
 The CRISPR-Cas system has revolutionized gene and genome editing. Protospacer_Finder enhances CRISPR research by offering:
 1. Universal compatibility with various CRISPR-Cas systems
 2. Identification of protospacers for specific PAM sequences
 3. Customizable PAM sequence and location (3' or 5')
 4. Adjustable protospacer length
 5. Off-target detection in reference genomes
+
 This comprehensive set of features allows researchers to efficiently identify and analyze potential CRISPR targets while considering off-target effects, making it a valuable tool for precise gene editing experiments.
 
-## Installation/Usage: 
+### Installation/Usage: 
 Cloning the repository, use the following command:
 ```
 git clone https://github.com/PrasanthKT/Protospacer_Finder.git
 cd Protospacer_Finder
 ```
-## Dependencies
+### Dependencies
 Ensure you have the following dependencies installed:
 1. Conda 24.7.1
 2. Python 3.12.2
 3. Biopython 1.84
 4. BWA 0.7.18
 
-## Running the Tool 
+### Running the Tool 
 ```bash
 conda activate your_environment_name
 ```
@@ -40,11 +41,11 @@ Arguments:
 5. reference_genome: Reference genome for off-target detection
 6. output_file: Name of the output file
 
-## Example Run:
+### Example Run:
 ```
 python main.py gene.fasta NGG 3prime 20 ref_genome.fasta Output.txt
 ```
-## Output
+### Output
 The script generates the output file containing:
 1. Protospacer sequence
 2. PAM sequence
@@ -56,15 +57,15 @@ GTTCCCGTTACAATCCTTAC    AGG        GTTCCCGTTACAATCCTTACAGG 	      1
 ACAATCCTTACAGGATTCTT    AGG        ACAATCCTTACAGGATTCTTAGG 	      1
 CTTACAGGATTCTTAGGTTC    AGG        CTTACAGGATTCTTAGGTTCAGG 	      1
 ```
-# Future Developments
+### Future Developments
 1. Customizable mismatch allowance for off-target detection
 2. Specification of allowed mismatch positions
 3. Identification of intronic/exonic targets (with GTF/GFF file input)
 4. User-friendly interface for file uploads and genome selection
 5. Customizable protospacer ID assignment 
 
-# Contributing
+### Contributations
 This is an open-source project, and contributions are welcome. Please feel free to submit pull requests or open issues for bugs and feature requests.
 
-# Contact
+### Contact
 In case of any problems, bugs, or feedback, please contact: prasanthkumar.t.22@gmail.com
