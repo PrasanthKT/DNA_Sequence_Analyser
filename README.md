@@ -1,9 +1,9 @@
-# Protospacer_Finder
+# Proto_Finder
 
-Protospacer_Finder is a Python-based tool designed to identify protospacers for various CRISPR-Cas systems. It serves as a universal protospacer finder for all Cas nucleases with different PAM (Protospacer Adjacent Motif) sequences.
+Proto_Finder is a Python-based tool designed to identify protospacers for various CRISPR-Cas systems. It serves as a universal protospacer finder for all Cas nucleases with different PAM (Protospacer Adjacent Motif) sequences.
 
 ### Overview
-The CRISPR-Cas system has revolutionized gene and genome editing. Protospacer_Finder enhances CRISPR research by offering:
+The CRISPR-Cas system has revolutionized gene and genome editing. Proto_Finder enhances CRISPR research by offering:
 1. Universal compatibility with various CRISPR-Cas systems
 2. Identification of protospacers for specific PAM sequences
 3. Customizable PAM sequence and location (3' or 5')
@@ -15,8 +15,8 @@ This comprehensive set of features allows researchers to efficiently identify an
 ### Installation/Usage: 
 Cloning the repository, use the following command:
 ```
-git clone https://github.com/PrasanthKT/Protospacer_Finder.git
-cd Protospacer_Finder
+git clone https://github.com/PrasanthKT/Proto_Finder.git
+cd Proto_Finder
 ```
 ### Dependencies
 Ensure you have the following dependencies installed:
