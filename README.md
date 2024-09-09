@@ -24,14 +24,12 @@ The CRISPR-Cas system has revolutionized gene and genome editing. Proto_Finder e
 
 This comprehensive set of features allows researchers to efficiently identify and analyze potential CRISPR targets while considering off-target effects, making it a valuable tool for precise gene editing experiments.
 
+### WorkFlow
 ```text
-
-Proto_Finder WorkFlow
-
-INPUT                      ----------------------         BWA - Maps the protospacers to the reference genome
-                           ----------------------         [Checks for the indexing files]
-                           ----------------------          if they are not present indexes
-[target_gene.fasta] ---->  [list of Protosoacers]  ---->  the file first and then maps]
+INPUT                      ----------------------         BWA - Maps the protospacers to the reference genome          OUTPUT          
+                           ----------------------         [Checks for the indexing files if they are not present,                
+[target_gene.fasta] ---->  [list of Protosoacers]  ---->   indexes the file first and then maps]                       [Protospacer    PAM   MAtching Sequence  Off-Target Count]
+                                                                     
 
 ```
 
