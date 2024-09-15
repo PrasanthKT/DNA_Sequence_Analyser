@@ -46,6 +46,10 @@ Ensure you have the following dependencies installed:
 3. Biopython 1.84
 4. BWA 0.7.18
 
+```
+pip install scikit-learn==1.5.1 numpy==1.24.3 pandas==2.2.2 joblib
+```
+
 ### Running the Tool 
 ```bash
 conda activate your_environment_name
