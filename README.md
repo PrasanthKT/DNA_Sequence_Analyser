@@ -5,11 +5,11 @@ Proto_Finder is a Python-based tool designed to identify protospacers for variou
 ### Overview
 The CRISPR-Cas system has revolutionized gene and genome editing. Proto_Finder enhances CRISPR research by offering:
    1.	PAM Flexibility: Support for diverse PAM sequences (e.g., NGG, TTTV, TYCV) and locations (3’ or 5’).
-	2.	Protospacer Identification: Extract protospacers of customizable lengths from any input gene.
-	3.	Off-Target Analysis: Detect off-target sites in reference genomes, allowing up to 3 mismatches.
-	4.	Genomic Annotation: Integrates GTF files to annotate genomic regions (e.g., exon, intron, intergenic).
-	5.	Optimized Workflow: Automatically checks and uses existing indexed genomes, avoiding redundant processing.
-	6.	Customizable Outputs: Includes protospacer, off-target sequences, genomic positions, and annotations.
+   2.	Protospacer Identification: Extract protospacers of customizable lengths from any input gene.
+   3.	Off-Target Analysis: Detect off-target sites in reference genomes, allowing up to 3 mismatches.
+   4.	Genomic Annotation: Integrates GTF files to annotate genomic regions (e.g., exon, intron, intergenic).
+   5.	Optimized Workflow: Automatically checks and uses existing indexed genomes, avoiding redundant processing.
+   6.	Customizable Outputs: Includes protospacer, off-target sequences, genomic positions, and annotations.
 This comprehensive set of features allows researchers to efficiently identify and analyze potential CRISPR targets while considering off-target effects, making it a valuable tool for precise gene editing experiments.
 
 ### WorkFlow
