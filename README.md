@@ -40,4 +40,4 @@ You can input a DNA sequence directly or provide a FASTA file.
 2. analysis.py: Contains the core functions for DNA sequence analysis.
 
 ### Note
-For detailed information about the project, refer to the report uploaded in this repository.
+For detailed information about the project, refer to the report ``` DNA_Sequence_Analyser.pdf``` uploaded in this repository.
