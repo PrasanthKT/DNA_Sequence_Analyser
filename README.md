@@ -27,11 +27,13 @@ pip install biopython tqdm
 git clone https://github.com/<your-username>/dna-sequence-analyzer.git
 ```
 
-2. Run the Script
+2. Run the Script. The Scripts are locate under ```Scripts``` directory.
 ```
 python main.py
 ```
 You can input a DNA sequence directly or provide a FASTA file.
+
+3. Test run results are present in the Repository under ``` Test ``` folder.
 
 ### Project Files
 1. main.py: Handles user interaction and integrates all functions.
